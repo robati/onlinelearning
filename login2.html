@@ -2,55 +2,41 @@
 <html>
 <head>
 <link rel="stylesheet"  href="c.css">
-<style>
-#loginForm input{
-		  display: block;
-    color: white;
-    
-   
-    text-decoration: none;
-}
+<link rel="stylesheet"  href="login2.css">
 
-#loginForm{
-
-padding: 30px 20px 30px 20px;
-border: solid;
-margin-left:40%;
-margin-right:40%;	
-background-color:rgb(140,140,140);
-	}
-	#submit{
-
-	 color: black;
-	}
-</style>
 </head>
 <body>
-
+<!-- header-->
 <ul>
-  <li class="site"><a  href="#home">Home Page</a></li>
+  <li class="site"><a class="active" href="#home">Home Page</a></li>
   <li class="site"><a href="#exams">Exams</a></li>
   <li class="site"><a href="#courses">Courses</a></li>
   
-  <li class="log"><a class="active" href="#login">log in /sign up</a></li>
+  <li class="log"><a href="#login">log in /sign up</a></li>
 </ul>
 <div id="x" >
-<img src="background.jpg" alt="background" >
-</div>
-<div style="padding:20px;background-color:rgb(200,200,200);height:300px">
+<h1 >onlineLearning</h1>
 
+</div>
+<!-- header finish-->
+<div style="padding:20px;background-color:rgb(200,200,200);height:300px">
+  <a id="sign-up" href="#register">Don't have an account? Sign up here!</a>
 <div id="loginForm">
 <form action="/accounts/auth/" method="post">
 <fieldset>
 <legend> log in </legend>
   <label for="username">username:</label>
-  <input type="text" name="username" value="" id="username">
+  <input type="text" name="username" value="" id="username"  placeholder="Enter your username" autofocus>
   <label for="password">password:</label>
-  <input type="password" name="password" value="" id="password">
-
-  <input id ="submit" type="submit" value="login"  style=" font-size: larger; color: black;  " >
+  <input type="password" name="password" value="" id="password" placeholder="Enter your password">
+  <a id="forgotLink" href="#forgot">Can not remember my password!</a>
+  <input id ="submit" type="submit" value="login" >
+ 
 </fieldset>
  </form>
+  
+ </div>
+ 
 
 </body>
 </html>
