@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"  href="test.css">
+<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet"  href="c.css">
+
+	<style type="text/css">
+		/*this is just to organize the demo checkboxes*/
+		label {margin-right:20px;}
+	</style>
+	  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#sh2").hide();
+ $("#background").hide();
+     
+    $("#m2").click(function(){
+        $("#sh1").hide();
+    
+        $("#sh2").show();
+		
+    });
+
+    $("#m1").click(function(){
+        $("#sh2").hide();
+    
+        $("#sh1").show();
+		
+    });
+	
+    $("#submit").click(function(){
+	
+		 $("#background").show();
+        $("#alert1").show();
+	 });
+	 $("#background,.decline").click(function(){
+	
+		 $("#background").hide();
+        $("#alert1,#alert2").hide();
+	 });
+	 $("#cancel").click(function(){
+	
+		 $("#background").show();
+        $("#alert2").show();
+	 });
+});
+</script>
+<style>
+#header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#header li.site {
+    float: left;
+}
+#header  li.log {
+    float: right;
+}
+#header  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#header li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: rgb(80,192,189);
+}</style>
+</head>
+<body>
+<header>
+<ul>
+  <li class="site"><a  href="#home">Home Page</a></li>
+  <li class="site"><a href="#exams">Exams</a></li>
+  <li class="site"><a href="#courses">Courses</a></li>
+  
+  <li class="log"><a href="#login">log in /sign up</a></li>
+</ul>
+
+</header>
+<div id="pagingtion" class="btn-group-vertical">
+<button id="m1" type="button" class="btn btn-primary btn-block" di>سری اول</button>
+<button id="m2" type="button" class="btn btn-primary btn-block " >سری دوم</button>
+<button type="button" class="btn btn-primary btn-block disabled">سری سوم</button>
+<button type="button" class="btn btn-primary btn-block disabled">سری چهارم</button>
+</div>
+<div id="sheet" dir="rtl"> 
+<form>
+<div id="sh1">
+<div style=" color:#222; padding:10px;"class="soal">
+
+<li ><p>تست1<p></li><br>
+
+<input type="radio" name="radiog_dark" id="radio6" class="css-checkbox" />
+<label for="radio6" class="css-label radGroup2">گزینه ی اول</label>
+<input type="radio" name="radiog_dark" id="radio5" class="css-checkbox" disabled checked="checked"/>
+<label for="radio5" class="css-label radGroup2">گزینه ی دوم</label>
+
+
+<input type="radio" name="radiog_dark" id="radio4" class="css-checkbox" />
+<label for="radio4" class="css-label radGroup2">گزینه ی سوم</label>
+</div>
+
+<div class="soal">
+<li ><p>تست2<p></li><br>
+<input type="radio" name="radiog_dark2" id="radio7" class="css-checkbox" />
+<label for="radio7" class="css-label radGroup2">گزینه ی اول</label>
+<input type="radio" name="radiog_dark2" id="radio8" class="css-checkbox" />
+<label for="radio8" class="css-label radGroup2">گزینه ی دوم</label>
+
+
+<input type="radio" name="radiog_dark2" id="radio9" class="css-checkbox" />
+<label for="radio9" class="css-label radGroup2">گزینه ی سوم</label>
+</div>
+<div class="soal">
+<li ><p>تست3<p></li><br>
+<input type="radio" name="radiog_dark3" id="radio10" class="css-checkbox" />
+<label for="radio10" class="css-label radGroup2">گزینه ی اول</label>
+<input type="radio" name="radiog_dark3" id="radio11" class="css-checkbox" />
+<label for="radio11" class="css-label radGroup2">گزینه ی دوم</label>
+
+
+<input type="radio" name="radiog_dark3" id="radio12" class="css-checkbox" />
+<label for="radio12" class="css-label radGroup2">گزینه ی سوم</label>
+</div>
+<div class="soal">
+<li ><p>تست4<p></li><br>
+<p class="javab"><input type=radio value="1" name="third"/ >یک</p>
+<p class="javab"><input type=radio value="2" name="third"/ >دو</p>
+<p class="javab"><input type=radio value="3" name="third"/>سه</p>
+<p class="javab"><input type=radio value="4" name="third"/ >چهار</p>
+<a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+</div>
+</div>
+<div id="sh2">
+<div style=" color:#222; padding:10px;"class="soal">
+
+<li ><p>تست5<p></li><br>
+
+<input type="radio" name="radiog_dark4" id="radio13" class="css-checkbox" />
+<label for="radio13" class="css-label radGroup2">گزینه ی اول</label>
+<input type="radio" name="radiog_dark4" id="radio14" class="css-checkbox" checked="checked"/>
+<label for="radio14" class="css-label radGroup2">گزینه ی دوم</label>
+
+
+<input type="radio" name="radiog_dark64" id="radio15" class="css-checkbox" />
+<label for="radio15" class="css-label radGroup2">گزینه ی سوم</label>
+</div>
+
+<div class="soal">
+<li ><p>تست6<p></li><br>
+<p class="javab"><input type=radio value="1" name="first"/ >یک</p>
+<p class="javab"><input type=radio value="2" name="first"/ >دو</p>
+<p class="javab"><input type=radio value="3" name="first"/>سه</p>
+<p class="javab"><input type=radio value="4" name="first"/ >چهار</p>
+</div>
+<div class="soal">
+<li ><p>تست<p></li><br>
+<p class="javab"><input type=radio value="1" name="second"/ >یک</p>
+<p class="javab"><input type=radio value="2" name="second"/ >دو</p>
+<p class="javab"><input type=radio value="3" name="second"/>سه</p>
+<p class="javab"><input type=radio value="4" name="second"/ >چهار</p>
+</div>
+<div class="soal">
+<li ><p>تست<p></li><br>
+<p class="javab"><input type=radio value="1" name="third"/ >یک</p>
+<p class="javab"><input type=radio value="2" name="third"/ >دو</p>
+<p class="javab"><input type=radio value="3" name="third"/>سه</p>
+<p class="javab"><input type=radio value="4" name="third"/ >چهار</p>
+<a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+</div>
+</div>
+
+</div>
+<div id="docker">
+
+
+<button id="submit" type="button" class="btn btn-success">
+     
+	 Submit Test
+    </button> <br>
+<button id="cancel" onclick="cancel()" type=button class="btn btn-danger" > cancel</button>
+</div>
+<div id="background">
+</div>
+<div id="alert1" dir=rtl >
+<p style="color:#434343; font-size:1.5em;background-color:#da4a4a">
+هشدار</p>
+<hr>
+<p>آیا از ثبت آزمون اطمینان دارید؟</p><br>
+<button type="button" class="btn btn-success">بله</button>
+<button type="button" class="btn btn-danger decline">خیر</button>
+</div>
+<div id="alert2" dir=rtl>
+<p style="color:#434343; font-size:1.5em;background-color:#da4a4a">
+هشدار</p>
+<hr>
+<p>آیا می خواهید بدون ثبت پاسخ ها از آزمون خارج شوید؟</p><br>
+<button type="button" class="btn btn-success">بله</button>
+<button type="button" class="btn btn-danger decline">خیر</button>
+</div>
+</form>
+</body>
+</html>
+
