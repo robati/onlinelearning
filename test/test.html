@@ -16,50 +16,65 @@
 <script src="flipclock.js"></script>	
 <script>
 $(document).ready(function(){
-$("#sh2").hide();
- $("#background").hide();
-     
-    $("#m2").click(function(){
-        $("#sh1").hide(); //css ro taghir bede input ha.  - age link bala ro zad bege safe ro khast bebande bege.
-    
-        $("#sh2").show();
-		
+	function changeSheet(a){
+	$("#sh1").hide();
+	$("#sh2").hide();
+	$(a).show();
+}
+$("#m2").click(function(){
+	changeSheet("#sh2");
+    //css ro taghir bede input ha.  - age link bala ro zad bege safe ro khast bebande bege.
     });
 
-    $("#m1").click(function(){
-        $("#sh2").hide();
-    
-        $("#sh1").show();
-		
+$("#m1").click(function(){
+	changeSheet("#sh1");
     });
 	
-    $("#save").click(function(){
+$("#save").click(function(){
 	
-		 $("#background").show();
-        $("#alert1").show();
+	$("#blockedbg").show();
+    $("#savealert").show();
 	 });
-	 $("#background,.decline").click(function(){
+	 $("#blockedbg,.decline").click(function(){
 	
-		 $("#background").hide();
-        $("#alert1,#alert2").hide();
+		
+        $("#savealert,#blockedbg,#discardalert").hide();
 	 });
 	 $("#cancel").click(function(){
 	
-		 $("#background").show();
-        $("#alert2").show();
+		 $("#blockedbg").show();
+        $("#discardalert").show();
 	 });
-	
+	 var oddClick = true;
+	$("#toggletimer").click(function(){
+	 if(oddClick){
+	 $(".flip-clock-wrapper").css("visibility","hidden");
+	 $("#toggletimer").html("Show timer");
+	 oddClick = false;
+	 }
+	 else{
+	 $(".flip-clock-wrapper").css("visibility","visible");
+	$("#toggletimer").html("Hide timer");
+	oddClick=true;}
+    });
+
  $(".accept").click(function(){
 	
 		clock.stop();
-		 $("#background").hide();
-        $("#alert1,#alert2").hide();
+		 $("#blockedbg").hide();
+        $("#savealert,#discardalert,#timealert").hide();
 		$(".sehat,#natije").show();
 		
 	 });
-var clock = $('.clock').FlipClock(3000, {
+var clock = $('.clock').FlipClock(10, {
 	clockFace: 'MinuteCounter',
-	countdown: true
+	countdown: true,
+	 callbacks: {
+		        	stop: function() {
+						 $("#blockedbg").show();
+		        			$("#timealert").show();
+		        	}
+		        }
 	
 });
 
@@ -179,7 +194,7 @@ a {
 <p class="javab"><input type=radio value="2" name="third"/ >دو</p>
 <p class="javab"><input type=radio value="3" name="third"/>سه</p>
 <p class="javab"><input type=radio value="4" name="third"/ >چهار</p>
-<a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+
 </div>
 </div>
 
@@ -192,13 +207,16 @@ a {
      
 	 Submit
     </button>
-<button id="cancel"  type=button class="btn btn-danger vasat" > Cancel</button><br><br>
+
+<button id="cancel"  type=button class="btn btn-danger vasat" > Cancel</button>
+	<button id="toggletimer" type="button" class="btn btn-warning vasat" style="display: initial;" > Hide timer</button>
+<p><p>
 <div id="result" class="vasat">
 result:
 <br>
 <br>
 <div id="natije">
-<p>
+
 correct answers: 2<p><p>
 score:  4
 </p><br>
@@ -206,10 +224,10 @@ score:  4
 </div>
 </div>
 </div>
-<div id="background">
+<div id="blockedbg">
 </div>
 
-<div id="alert1" dir=rtl >
+<div id="savealert" class="warning" dir=rtl >
 <p style="color:#434343; font-size:1.5em;background-color:#da4a4a">
 هشدار</p>
 <hr>
@@ -217,13 +235,21 @@ score:  4
 <button type="button" class="btn btn-success accept">بله</button>
 <button type="button" class="btn btn-danger decline">خیر</button>
 </div>
-<div id="alert2" dir=rtl>
+<div id="discardalert" class="warning" dir=rtl>
 <p style="color:#434343; font-size:1.5em;background-color:#da4a4a">
 هشدار</p>
 <hr>
 <p>آیا می خواهید بدون ثبت پاسخ ها از آزمون خارج شوید؟</p><br>
 <button type="button" class="btn btn-success " >بله</button>
 <button type="button" class="btn btn-danger decline">خیر</button>
+</div>
+<div id="timealert"class="warning" dir=rtl>
+<p style="color:#434343; font-size:1.5em;background-color:#da4a4a">
+هشدار</p>
+<hr>
+<p>زمان شما به پایان رسید</p><br>
+<button type="button" class="btn btn-success accept" >تایید</button>
+
 </div>
 </form>
 </body>
