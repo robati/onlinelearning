@@ -33,7 +33,7 @@ outline-style:solid;
 	
 }
 	
-}
+
 .javab{
 	/*background-color:pink;*/
 	margin-top:1px;
@@ -71,7 +71,7 @@ outline-style:solid;
 
 margin-top:4em;
 }
-#background{
+#blockedbg{
 	display:none;
 	position:fixed;
 	width:100%;
@@ -79,7 +79,8 @@ margin-top:4em;
 	background-color:rgba(50,50,50,0.75);
 	z-index:2;
 }
-#alert1,#alert2
+
+.warning
 {
 	display:none;
 	  border-radius: 25px;
@@ -110,7 +111,7 @@ span.flip-clock-label{
 	background-repeat:no-repeat;
 	background-size: contain;
 	width:100%;
-	height:70%;
+	height:50%;
 	margin-left:auto;
 	padding:15%;
 }
@@ -131,3 +132,7 @@ span.flip-clock-label{
 #natije{
 	display:none;
 }
+#sh2{
+	display:none;
+}
+
