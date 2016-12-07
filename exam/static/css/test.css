@@ -1,5 +1,4 @@
 body{
-/*background-color:rgb(0,0,255);*/
 background-image:url(../image/wood.jpg);
 background-size:100%;
 
@@ -7,7 +6,6 @@ background-size:100%;
 
 }
 #sheet{
-/*background-color:white;	*/
 background-image:url(../image/2.jpg);
 float:right;
 height:85%;
@@ -23,17 +21,17 @@ outline-style:solid;
 
 }
 .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
-   
+
     cursor: auto !important;
 }
 .soal{
 	margin-bottom:20px;
 	text-align:right;
 	padding-top:5%;
-	
+
 }
-	
-}
+
+
 .javab{
 	/*background-color:pink;*/
 	margin-top:1px;
@@ -41,37 +39,37 @@ outline-style:solid;
 	font-size: small;
 }
 #save{
-	
+
 	margin-left:5%;
-	 
+
 }
 #cancel{
 	margin-left:5%;
 }
 #docker{
-	width:25%; 
-		
+	width:25%;
+
     margin-top:4em;
-	
+
 	position:absolute;
 	right:73%;
-	
+
 	height:85%;
 
 }
 #pagingtion{
-	
+
 	width:7%;
 	position:absolute;
 	right:2%;
 	height:85%;
 
-	
-	
+
+
 
 margin-top:4em;
 }
-#background{
+#blockedbg{
 	display:none;
 	position:fixed;
 	width:100%;
@@ -79,7 +77,8 @@ margin-top:4em;
 	background-color:rgba(50,50,50,0.75);
 	z-index:2;
 }
-#alert1,#alert2
+
+.warning
 {
 	display:none;
 	  border-radius: 25px;
@@ -93,7 +92,7 @@ margin-top:4em;
 	height:200px;
 	background-color:white;
 	z-index:2;
-	
+
 }
 button{
 	overflow:hidden;
@@ -115,11 +114,11 @@ span.flip-clock-label{
 	padding:15%;
 }
 .vasat{
-	
+
 	position:relative;
 	left:20px;
-	
-	
+
+
 }
 #save{
 	left:30px;
@@ -130,4 +129,20 @@ span.flip-clock-label{
 }
 #natije{
 	display:none;
+}
+#sh2{
+	display:none;
+}
+
+a {
+
+    text-decoration: none;
+}
+#toggletimer{
+	display: initial;
+}
+.warning-onvan{
+	color:#434343;
+	font-size:1.5em;
+	background-color:#da4a4a
 }
