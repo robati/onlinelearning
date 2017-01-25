@@ -1,0 +1,17 @@
+// Callback handler that will be called on success
+  /*  request.done(function (response, textStatus, jqXHR){
+        // Log a message to the console
+		alert();
+        console.log("Hooray, it worked!");
+    });
+	 /* var str = $( "form" ).serialize();
+	request = $.ajax({
+        url: "examsubmit.php",
+        type: "post",
+        data: str
+    });
+		   // $('#natije').fadeIn(1000).append('<p>' + response.posted + '</p>');
+		*/
+		
+		
+		js

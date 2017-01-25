@@ -1,0 +1,208 @@
+
+body {
+    background: white url("background.png");
+	font-family:'Conv_0 Mehr Bold',Sans-Serif;
+}
+
+
+#sheet{
+/*background-color:white;	*/
+
+float:right;
+top:4em;
+position:absolute;
+right:5%;
+width:55%;
+
+margin-top:1%;
+padding:1%;
+
+
+}
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+   
+    cursor: auto !important;
+}
+.soal{
+	margin-bottom:20px;
+	text-align:right;
+	padding-top:5%;
+	
+}
+	
+
+.javab{
+	/*background-color:pink;*/
+	margin-top:1px;
+	padding:4px 1px;
+	font-size: small;
+}
+#save{
+	
+	margin-left:5%;
+	 
+}
+#cancel{
+	margin-left:5%;
+}
+#docker{
+	 
+	top:4em;
+   /* margin-top:10px;*/
+	
+	position:fixed;
+	right:70%;
+	
+	height:85%;
+
+}
+#pagingtion{
+	
+	
+	position:relative;
+	
+	margin-top:4%;
+	
+	    margin-left: 18%;
+    width: 200px;
+}
+#blockedbg{
+	display:none;
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color:rgba(50,50,50,0.75);
+	z-index:2;
+}
+
+.warning
+{
+	display:none;
+	  border-radius: 25px;
+    border: 2px solid #483029;
+    text-align:center;
+	top:35%;
+	left:40%;
+	position:fixed;
+	padding:1%;
+	width:300px;
+	height:200px;
+	background-color:white;
+	z-index:2;
+	
+}
+button{
+	overflow:hidden;
+}
+
+
+span.flip-clock-label{
+	color:white !important;
+}
+#result{
+	background-image:url("c4.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+
+
+	height:300px;
+	padding-top:20%;
+	padding-right:30%;
+	position:relative;
+	margin:10%
+}
+#result2{
+	background-image:url("c4.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+
+
+	height:300px;
+	padding-top:20%;
+	padding-right:30%;
+	position:relative;
+	margin-left: 10%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+.vasat{
+	
+	position:relative;
+	left:20px;
+	
+	
+}
+#save{
+	left:30px;
+}
+.sehat{
+	color:red;
+	display:none;
+}
+#natije{
+	display:none;
+	
+}   
+
+
+a {
+  
+    text-decoration: none;
+}
+#toggletimer{
+	display: initial;
+}
+.warning-onvan{
+	color:red; 
+	font-size:1.5em;
+
+}
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-brand {
+    font-family: 'Satisfy', cursive;
+}
+
+li label{
+	cursor: pointer;
+}
+#vasat2{
+margin-left:20%;	
+}
+span.flip-clock-label
+{
+	color:black !important;
+}
+header{
+	position:fixed;
+	z-index:2;
+}
+#main{
+    height: 300px;
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 5%;
+	padding:2%;
+	}
+#submitAnswers{
+	margin-left:25%;
+}
+#loginalert{
+	display:none;
+	border-radius: 25px;
+    border: 2px solid #483029;
+    text-align:center;
+	top:35%;
+	left:40%;
+	position:fixed;
+	padding:1%;
+	width:300px;
+	height:220px;
+	background-color:white;
+	z-index:2;
+}
+#in{
+	cursor:pointer;
+}
